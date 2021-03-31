@@ -1,45 +1,42 @@
 package algorithm;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Stack;
-import java.util.StringTokenizer;
 
 public class Stack1 {
 	//17298 오큰수 0311
-	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+	public static void main(String[] args) throws IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		
+		int num = Integer.parseInt(bf.readLine());
 		Stack<Integer> stack = new Stack<Integer>();
-		Stack<Integer> stackN = new Stack<Integer>();
-		int[] list = new int[n];
-		int[] answer = new int[n];
-		for (int i = 0; i < n; i++) {
-			list[i] = Integer.parseInt(st.nextToken());
+		int[] nums = new int[num];
+		int[] result = new int[num];
+		String[] input = bf.readLine().split(" ");
+		for(int i = 0; i < num; i++)
+			nums[i] = Integer.parseInt(input[i]);
+		
+		stack.push(0);
+		for(int i = 1; i < num; i++) {
+			while(!stack.isEmpty() && nums[stack.peek()] < nums[i])
+				result[stack.pop()] = nums[i];
+			stack.push(i);
 		}
-		for (int i = 0; i < n; i++) {	
-			int size = stack.size();
-			for (int j = 0; j<size; j++) {
-				if(stack.isEmpty())
-					break;
-				if (stack.peek() < list[i]) {
-					stack.pop();
-					answer[stackN.pop()] = list[i];
-				}
-				else
-					break;
-			}
-			stack.push(list[i]);
-			stackN.push(i);
-		}
-		for(int i =0;i<n;i++) {
-			if(answer[i]!=0)
-				System.out.print(answer[i]+ " ");
-			else
-				System.out.print("-1 ");
-		}
+		
+		while(!stack.isEmpty())
+			result[stack.pop()] = -1;
+		
+		BufferedWriter bw = new BufferedWriter(new 	OutputStreamWriter(System.out));
+		
+		for(int i = 0; i < num; i++)
+			bw.write(result[i]+" ");
+		
+		bw.flush();
+		return;
 	}
 }
 //////////////////////0313
