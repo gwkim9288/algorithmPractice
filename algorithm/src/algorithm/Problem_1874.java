@@ -12,36 +12,30 @@ public class Problem_1874 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		Stack<Integer> stack = new Stack<Integer>();
-		int num=0;
-		LinkedList<Integer> list = new LinkedList<Integer>();
-		for(int i =0;i<N;i++) {
-			list.add(Integer.parseInt(br.readLine()));
-		}
 		LinkedList<String> prList= new LinkedList<String>();
-		boolean check = true;
-		
+		int next = Integer.parseInt(br.readLine());
+		int count = 1;
 		for(int i=1;i<N+1;i++) {
-			if(i<=list.get(num)) {
-				stack.push(i);
-				prList.add("+");
-			}else {
-				if(stack.peek().equals(list.get(num))) {
-					stack.pop();
-					prList.add("-");
-					num++;
-					i--;
-				}
-				else {
-					System.out.println("NO");
-					check=false;
+			stack.push(i);
+			prList.add("+");
+			while(stack.peek().equals(next)&&prList.size()<N*2) {
+				stack.pop();
+				prList.add("-");
+				if(count == N)
 					break;
-				}
+				next = Integer.parseInt(br.readLine());
+				count++;
+				if(stack.isEmpty())
+					break;
 			}
 		}
-		if(check) {
+		if(stack.isEmpty()) {
 			for(String i : prList) {
 				System.out.println(i);
 			}
 		}
+		else
+			System.out.println("NO");
+		
 	}
 }
