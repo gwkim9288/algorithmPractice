@@ -38,7 +38,7 @@ public class Problem_1931 {
 			end = time[0][1];
 			count++;
 		}
-		for(int i=0 ;i<n;i++) {
+		for(int i=1 ;i<n;i++) {
 			if(end<=time[i][0]) {
 				end = time[i][1];
 				count ++;
