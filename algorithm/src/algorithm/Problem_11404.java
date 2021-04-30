@@ -10,7 +10,7 @@ public class Problem_11404 {
 	static int cityNum;
 	static int[][] bus;
 	static int busNum;
-	static final int inf = 100000;
+ 	static final int inf = 10000000;
 	
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -33,18 +33,25 @@ public class Problem_11404 {
 			price = Integer.parseInt(st.nextToken());
 			bus[start][end]=Math.min(price, bus[start][end]);
 		}
-		System.out.println(bus[1][3]);
+		floydWarshall();
 		for(int i=1;i<cityNum+1;i++) {
 			for(int j=1;j<cityNum+1;j++) {
-				System.out.print(dfs(i,j,0,0)+" ");
+				if(bus[i][j] == inf)
+					System.out.print(0);
+				else
+					System.out.print(bus[i][j]+" ");
 			}
 			System.out.println();
 		}
 		
 	}
-	public static int dfs(int start,int end,int escape,int test) {
-		for(int i=1;i<cityNum+1;i++) {
-			
+	public static void floydWarshall() {
+		for(int k =1; k<=cityNum;k++) {
+			for(int i=1;i<=cityNum;i++) {
+				for(int j=1;j<=cityNum;j++) {
+					bus[i][j] = Math.min(bus[i][j], bus[i][k]+bus[k][j]);
+				}
+			}
 		}
 	}
 }
