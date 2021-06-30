@@ -28,29 +28,33 @@ public class Problem_2178 {
 				board[i][j] = Integer.parseInt(str.substring(j, j+1));
 			}
 		}	
-		System.out.println(bfs());
+		bfs();
+		System.out.println(board[n-1][m-1]);
 	}
 	
-	public static int bfs() {
+	public static void bfs() {
 		Queue<byte[]> qu = new LinkedList<byte[]>();
-		qu.add(new byte[]{0,0,1});
+		qu.add(new byte[]{0,0});
 		byte[] now;
+		visited[0][0] = true;
 		while(!qu.isEmpty()) {
 			byte [] next = new byte [2]; 
 			now = qu.poll();
-			visited[now[0]][now[1]] = true;
+			
 			for(int i =0;i<4;i++) {
 				next[0] = (byte) (now[0]+dx[i]);
 				next[1] = (byte)(now[1]+dy[i]);
 				if(next[0]<0||next[0]>=n||next[1]<0||next[1]>=m||board[next[0]][next[1]]==0||visited[next[0]][next[1]])
 					continue;
 				else {
-					if(next[0]==n-1&&next[1]==m-1)
-						return now[2]+1;
-					qu.add(new byte[] {next[0],next[1],(byte)(now[2]+1)});
+//					if(next[0]==n-1&&next[1]==m-1)
+//						board[next[0]][next[1]]=board[now[0]][now[1]]+1;
+					qu.add(new byte[] {next[0],next[1]});
+					board[next[0]][next[1]]=board[now[0]][now[1]]+1;
+					visited[next[0]][next[1]] = true;
+
 				}
 			}
 		}
-		return 0;
 	}
 }
