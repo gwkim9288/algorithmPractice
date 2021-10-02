@@ -53,12 +53,12 @@ public class Problem_15955 {
 					visited[i] = true;
 					hp = maxhp;
 				}
-				else if(Math.abs(ckpoint[0]-nowPoint[0])+Math.pow(ckpoint[1]-nowPoint[1])<Math.pow(hp)) {
-					qu.add(i);
-					visited[i] = true;
-					hp = maxhp;
-				}
-				else if
+//				else if(Math.abs(ckpoint[0]-nowPoint[0])+Math.pow(ckpoint[1]-nowPoint[1])<Math.pow(hp)) {
+//					qu.add(i);
+//					visited[i] = true;
+//					hp = maxhp;
+//				}
+
 			}
 		}
 		return false;
