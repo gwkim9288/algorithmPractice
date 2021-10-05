@@ -43,7 +43,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Problem_1967">
+  <component name="RunManager" selected="Application.Problem_2533">
     <configuration name="Problem_1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithm.Problem_1018" />
       <module name="algorithm" />
@@ -83,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Problem_2533" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_2533" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -96,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem_2533" />
         <item itemvalue="Application.Problem_1967" />
         <item itemvalue="Application.Problem_2206" />
         <item itemvalue="Application.Problem_1018" />
@@ -114,7 +128,7 @@
       <workItem from="1615341258402" duration="14000" />
       <workItem from="1615343381998" duration="111000" />
       <workItem from="1633061758463" duration="4131000" />
-      <workItem from="1633335483354" duration="3949000" />
+      <workItem from="1633335483354" duration="9928000" />
     </task>
     <servers />
   </component>
