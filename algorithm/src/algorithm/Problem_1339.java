@@ -38,7 +38,7 @@ public class Problem_1339 {
             }
         }
 
-        System.out.println()
+        System.out.println();
         int ans =0;
         for(int i =0;i<list.size();i++){
             ans += list.get(i)*(i+(10-list.size()));
