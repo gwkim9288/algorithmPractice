@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b4f9509-37d7-4a2c-b11b-e9726ee08346" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/algorithm/Problem_1339.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/algorithm/Problem_1339.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Problem_1339.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Problem_1339.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/algorithm/Problem_1717.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/algorithm/Problem_1717.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Problem_1717">
+  <component name="RunManager" selected="Application.Problem_2470">
     <configuration name="Check_sdoku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithm.Check_sdoku" />
       <module name="algorithm" />
@@ -59,8 +58,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem_1339" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_1339" />
+    <configuration name="Problem_1654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_1654" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem_2533" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_2533" />
+    <configuration name="Problem_2470" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_2470" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem_2470" />
+        <item itemvalue="Application.Problem_1654" />
         <item itemvalue="Application.Problem_1717" />
         <item itemvalue="Application.Problem_2239" />
         <item itemvalue="Application.Check_sdoku" />
-        <item itemvalue="Application.Problem_1339" />
-        <item itemvalue="Application.Problem_2533" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +143,7 @@
       <workItem from="1615341258402" duration="14000" />
       <workItem from="1615343381998" duration="111000" />
       <workItem from="1633061758463" duration="4131000" />
-      <workItem from="1633335483354" duration="24497000" />
+      <workItem from="1633335483354" duration="36631000" />
     </task>
     <servers />
   </component>
