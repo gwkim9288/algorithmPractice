@@ -43,9 +43,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Problem_1916">
-    <configuration name="Problem_1654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_1654" />
+  <component name="RunManager" selected="Application.Problem_10026">
+    <configuration name="Problem_10026" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Problem_10026" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem_10026" />
         <item itemvalue="Application.Problem_1916" />
         <item itemvalue="Application.Problem_4195" />
         <item itemvalue="Application.Problem_1759" />
         <item itemvalue="Application.Problem_2470" />
-        <item itemvalue="Application.Problem_1654" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +147,7 @@
       <workItem from="1633335483354" duration="41225000" />
       <workItem from="1635824006190" duration="1366000" />
       <workItem from="1638517091045" duration="5766000" />
-      <workItem from="1640925323386" duration="4507000" />
+      <workItem from="1640925323386" duration="7912000" />
     </task>
     <servers />
   </component>
